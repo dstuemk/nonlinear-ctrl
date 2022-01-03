@@ -1,7 +1,9 @@
 ## Non-Linear Control
 
 In this MATLAB-Script two feedback controllers for stabilizing a non-linear dynamical system are compared. The system is described by the following differential equation:
+
 ![System Equation](https://latex.codecogs.com/svg.image?\dot{x}_1=x_2&space;-&space;x_1^3&space;)
+
 ![System Equation](https://latex.codecogs.com/svg.image?\dot{x}_2=u&space;)
 
 Control strategies:
