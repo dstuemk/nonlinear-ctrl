@@ -10,6 +10,8 @@ In this MATLAB-Script two feedback controllers for stabilizing a non-linear dyna
 ### [Backstepping control](https://en.wikipedia.org/wiki/Backstepping)  
 Recursive design where in each step one state variable get's controled. The resulting closed loop system leads to asymptotic stability.
 
+![Equation 1 backstepping](https://latex.codecogs.com/svg.image?\begin{align*}\text{1.&space;Step}&\\z_1&space;:=&&space;\&space;x_1&space;\\\dot{z_1}&space;=&&space;-z_1^3&space;&plus;&space;x_2&space;\\V_1(z)&space;=&&space;\frac{1}{2}z_1^2&space;\\\dot{V_1}(z)&space;=&&space;z_1&space;\dot{z}_1&space;=&space;z_1&space;(-z_1^3&space;&plus;&space;x_2)&space;\\x_2&space;:=&&space;\alpha_1&space;\text{&space;choose&space;}&space;\alpha_1&space;\text{&space;such&space;that&space;}&space;\dot{V}_1&space;\text{&space;is&space;ndf&space;}&space;\\\alpha_1&space;=&&space;z_1^3&space;-&space;z_1&space;\implies&space;\dot{V}_1&space;=&space;-z_1^2\end{align})
+
 ### [Lyapuov based control](https://en.wikipedia.org/wiki/Control-Lyapunov_function)
 A positive definite "pseudo-energy" energy function ![V(x)](https://latex.codecogs.com/svg.image?\inline&space;V(x)=||&space;x&space;||^2) is defined. The control law aims to make the derivative of this function negative (semi-)definite. This leads to a closed loop system which loses energy over time.
 
